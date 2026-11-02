@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - github.com/jaegertracing/jaeger-operator/config/default?ref=v1.65.0
+images:
+  - name: controller
+    newName: docker.io/mohankrishna999/jaeger-operator
+    newTag: 1.65.0-patched

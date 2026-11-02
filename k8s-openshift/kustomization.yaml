@@ -1,0 +1,5 @@
+# The upstream operator manifests already use the restricted-compatible non-root runtime.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../k8s
